@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+div {
+  background-color: #ffffff;
+}
+table, th, td {
+  border: 2px solid #f5821f;
+  border-collapse: collapse;
+  border-style: groove;
+  
+   background-image: url(http://nilayafoundation.org/Nilaya1.jpg);
+	background-position: right top;
+	background-size: 150px 150px;
+  background-repeat: no-repeat;
+  
+}
+th, td {
+  padding: 15px;
+}
+p,li {
+  font-size:12.0pt;font-family:"Helvetica",sans-serif;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body {
+	
+}
+</style>
+</head>
+<body>
+<div>
+<table>
+<tbody>
+<tr>
+<td>
+<p>Namaskara [Name]</p>
+
+<p>Nilaya Foundation is inviting scholarship application from highly meritorious but economically weaker section students.<br />
+Anyone studying PUC &amp; ABOVE COURSES can apply for this scholarship.</p>
+
+<p><strong>We would like you to spread the word among your known groups so that you can help a needy student.</strong></p>
+<p id="applurl" hidden>http://nilayafoundation.org/Scholarships.html</p>
+<p ><strong>Link to Apply : http://nilayafoundation.org/Scholarships.html <br/><p style="text-align: center;"><a class="button" onclick="copyLink()" style="text-color:white">Copy Link</a></p>
+Last Date for Application : 23-Sept-2021</strong></p>
+
+<p>Dhanyavada,<br />
+Nilaya Foundation<br />
+Bengaluru, Karnataka&nbsp;</p>
+
+<p>+91 9880926158<br />
++91 9845968032<br />
++91 9448064123<br />
++91 9980541495</p>
+
+<p>Note : Please read instructions in website before submitting application. For any doubts please call or WhatsApp message to above numbers after 6 PM</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<script>
+function copyLink() {
+  /* Get the text field */
+  var copyText = document.getElementById("applurl");
+
+  /* Select the text field */
+  //copyText.select();
+  //copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.innerHTML);
+  
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.innerHTML);
+}
+</script>
+</body>
+</html>
+
